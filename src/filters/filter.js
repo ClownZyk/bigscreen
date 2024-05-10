@@ -43,7 +43,6 @@ export function formatDate(time, fmt = 'yyyy-MM-dd hh:mm:ss') {
       const str = obj[value] + ''
       const result = reg.exec(fmt)
       const result1 = fmt.match(reg)
-      console.log(result1);
       fmt = fmt.replace(result[0], result[0].length === 1 ? str : padLeftZero(str))
     }
   }

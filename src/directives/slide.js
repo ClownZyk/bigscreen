@@ -8,7 +8,6 @@ const slide = {
     // }, 1000)
   },
   componentUpdated(el, bindings) {
-    console.log(bindings)
     const { value = 1, modifiers } = bindings
     const { horizontal = false } = modifiers
     const containerSize = horizontal ? el.offsetWidth : el.offsetHeight
